@@ -31,20 +31,41 @@ public class Main {
 
 
         for (int i = 0; i < books.size(); i++) {
-            System.out.println(books.get(i).getTitle() + " " + books.get(i).getPages() + " " + books.get(i).getReleaseYear());}
+            System.out.println(books.get(i).getTitle() + " " + books.get(i).getPages() + " " + books.get(i).getReleaseYear());
         }
 
-
-
-
         Plant plant1 = new Plant();
-        plant1.setName("Aloe Vera");
+        plant1.setName("Aloe vera");
+        plant1.setLatinNameName("Aloe vera");
+        plant1.setIsItAnnual(false);
+        plant1.setContinentOnWhereItGrows("Mostly Africa");
+        plant1.setHeight(1);
+        plant1.setIsItEdible("Yes");
+
+        Plant plant2 = new Plant();
+        plant2.setName("Carrot");
+        plant2.setLatinNameName("Daucus carota");
+        plant2.setIsItAnnual(true);
+        plant2.setContinentOnWhereItGrows("Most continents");
+        plant2.setHeight(0.3);
+        plant2.setIsItEdible("Yes");
+
+        Plant plant3 = new Plant("Poison ivy","Toxidendron radicans",false,"Asia",1.2,"No");
+        Plant plant4 = new Plant("Rose","Rosa",false,"Most continents",1.8,"No");
+
+        ArrayList<Plant> plants = new ArrayList<>();
+        plants.add(plant1);
+        plants.add(plant2);
+        plants.add(plant3);
+        plants.add(plant4);
+
+        for (int x = 0; x < plants.size(); x++) {
+            System.out.println(plants.get(x).getName() + " " +  plants.get(x).getLatinName() + " " + plants.get(x).getIsItAnnual() + " " + plants.get(x).getContinentOnWhereItGrows() + " " + plants.get(x).getHeight() + " m. " + plants.get(x).getIsItEdible());
 
 
+        }
 
-
-
-
-
+    }
 }
+
 

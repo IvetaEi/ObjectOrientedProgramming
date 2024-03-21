@@ -3,7 +3,7 @@ public class Plant {
     private String latinName;
     private boolean isItAnnual;
     private String continentOnWhereItGrows;
-    private int height;
+    private double height;
     private String isItEdible;
 
     public void setName(String name) {
@@ -38,11 +38,11 @@ public class Plant {
         return this.continentOnWhereItGrows;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public int getHeight(int height) {
+    public double getHeight(double height) {
         return this.height;
     }
 
@@ -56,7 +56,7 @@ public class Plant {
 
     public Plant() {}
 
-    public Plant(String name, String latinName, boolean isItAnnual, String continentOnWhereItGrows, int height, String isItEdible) {
+    public Plant(String name, String latinName, boolean isItAnnual, String continentOnWhereItGrows, double height, String isItEdible) {
         this.name = name;
         this.latinName = latinName;
         this.isItAnnual = isItAnnual;
