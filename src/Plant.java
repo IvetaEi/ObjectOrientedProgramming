@@ -10,7 +10,7 @@ public class Plant {
         this.name = name;
     }
 
-    public String getName(String name) {
+    public String getName() {
         return this.name;
     }
 
@@ -18,7 +18,7 @@ public class Plant {
         this.latinName = latinName;
     }
 
-    public String getLatinName(String latinName) {
+    public String getLatinName() {
         return this.latinName;
     }
 
@@ -26,7 +26,7 @@ public class Plant {
         this.isItAnnual = isItAnnual;
     }
 
-    public boolean getIsItAnnual(boolean isItAnnual) {
+    public boolean getIsItAnnual() {
         return this.isItAnnual;
     }
 
@@ -34,7 +34,7 @@ public class Plant {
         this.continentOnWhereItGrows = continentOnWhereItGrows;
     }
 
-    public String getContinentOnWhereItGrows(String continentOnWhereItGrows) {
+    public String getContinentOnWhereItGrows() {
         return this.continentOnWhereItGrows;
     }
 
@@ -42,7 +42,7 @@ public class Plant {
         this.height = height;
     }
 
-    public double getHeight(double height) {
+    public double getHeight() {
         return this.height;
     }
 
@@ -50,7 +50,7 @@ public class Plant {
         this.isItEdible = isItEdible;
     }
 
-    public String getIsItEdible(String isItEdible) {
+    public String getIsItEdible() {
         return this.isItEdible;
     }
 

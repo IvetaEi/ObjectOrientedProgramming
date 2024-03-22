@@ -34,6 +34,10 @@ public class Main {
             System.out.println(books.get(i).getTitle() + " " + books.get(i).getPages() + " " + books.get(i).getReleaseYear());
         }
 
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
         Plant plant1 = new Plant();
         plant1.setName("Aloe vera");
         plant1.setLatinNameName("Aloe vera");
