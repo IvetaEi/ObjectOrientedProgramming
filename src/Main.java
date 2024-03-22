@@ -36,7 +36,6 @@ public class Main {
 
         System.out.println();
         System.out.println();
-        System.out.println();
 
         Plant plant1 = new Plant();
         plant1.setName("Aloe vera");
@@ -44,7 +43,7 @@ public class Main {
         plant1.setIsItAnnual(false);
         plant1.setContinentOnWhereItGrows("Mostly Africa");
         plant1.setHeight(1);
-        plant1.setIsItEdible("Yes");
+        plant1.setIsItEdible(true);
 
         Plant plant2 = new Plant();
         plant2.setName("Carrot");
@@ -52,10 +51,10 @@ public class Main {
         plant2.setIsItAnnual(true);
         plant2.setContinentOnWhereItGrows("Most continents");
         plant2.setHeight(0.3);
-        plant2.setIsItEdible("Yes");
+        plant2.setIsItEdible(true);
 
-        Plant plant3 = new Plant("Poison ivy","Toxidendron radicans",false,"Asia",1.2,"No");
-        Plant plant4 = new Plant("Rose","Rosa",false,"Most continents",1.8,"No");
+        Plant plant3 = new Plant("Poison ivy","Toxidendron radicans",false,"Asia",1.2,false);
+        Plant plant4 = new Plant("Rose","Rosa",false,"Most continents",1.8,false);
 
         ArrayList<Plant> plants = new ArrayList<>();
         plants.add(plant1);
@@ -63,12 +62,17 @@ public class Main {
         plants.add(plant3);
         plants.add(plant4);
 
+        for(Plant plant: plants) {
+            System.out.println(plant);
+        }
+
+        System.out.println();
+        System.out.println();
+
         for (int x = 0; x < plants.size(); x++) {
             System.out.println(plants.get(x).getName() + " " +  plants.get(x).getLatinName() + " " + plants.get(x).getIsItAnnual() + " " + plants.get(x).getContinentOnWhereItGrows() + " " + plants.get(x).getHeight() + " m. " + plants.get(x).getIsItEdible());
 
-
         }
-
     }
 }
 

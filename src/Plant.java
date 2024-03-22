@@ -4,7 +4,7 @@ public class Plant {
     private boolean isItAnnual;
     private String continentOnWhereItGrows;
     private double height;
-    private String isItEdible;
+    private boolean isItEdible;
 
     public void setName(String name) {
         this.name = name;
@@ -46,17 +46,17 @@ public class Plant {
         return this.height;
     }
 
-    public void setIsItEdible(String isItEdible) {
+    public void setIsItEdible(boolean isItEdible) {
         this.isItEdible = isItEdible;
     }
 
-    public String getIsItEdible() {
+    public boolean getIsItEdible() {
         return this.isItEdible;
     }
 
     public Plant() {}
 
-    public Plant(String name, String latinName, boolean isItAnnual, String continentOnWhereItGrows, double height, String isItEdible) {
+    public Plant(String name, String latinName, boolean isItAnnual, String continentOnWhereItGrows, double height, boolean isItEdible) {
         this.name = name;
         this.latinName = latinName;
         this.isItAnnual = isItAnnual;
@@ -64,4 +64,16 @@ public class Plant {
         this.height = height;
         this.isItEdible = isItEdible;
     }
+
+
+        @Override
+          public String toString() {
+            return this.name + " " +
+                   this.latinName + " " +
+                    (this.isItAnnual ? "vienmetis" : "daugiametis" )  + " " +
+                   this.continentOnWhereItGrows  + " " +
+                   this.height + " m. " +
+                    (this.isItEdible ? "" : "ne") + "valgomas";
+        }
+
 }
